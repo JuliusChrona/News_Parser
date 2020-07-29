@@ -1,0 +1,10 @@
+{% extends "news/base.html" %}
+
+{% block content %}
+    <h2></h2>
+    <ul>
+        {% for news in object_list %}
+            <li>{{ news.title }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
